@@ -1,0 +1,47 @@
+<style>
+input[type=text], input[type=number] 
+        { 
+            width: 100%; 
+            margin: 8px 0;
+            padding: 12px 20px; 
+            display: inline-block; 
+            border: 2px solid green; 
+            box-sizing: border-box;
+            border-radius: 20px;
+        }
+input[type=submit]
+{
+    background-color: #4CAF50; 
+            width: 100%;
+            color: black; 
+            padding: 15px; 
+            margin: 10px 0px; 
+            border: none;
+            border-radius: 20px; 
+            cursor: pointer; 
+}
+</style>
+<center><h1>BILL CALCULATION</h1></center>
+<h3>Enter 0 if the device is used rarely</h3>
+<form action="CalculateServlet" method="post">  
+Number of Tube Lights:<input type="text" name="tl_no"><br>  
+Average use in a day:<input type="text" name="tl_hr"><br>
+Number of Fans:<input type="text" name="fan_no"><br>  
+Average use in a day:<input type="text" name="fan_hr"><br>
+Number of Bulbs:<input type="text" name="b_no"><br>  
+Average use in a day:<input type="text" name="b_hr"><br>
+Number of ACs:<input type="text" name="ac_no"><br>  
+Average use in a day:<input type="text" name="ac_hr"><br>
+Number of PC,TV,Laptops:<input type="text" name="pc_no"><br>  
+Average use in a day:<input type="text" name="pc_hr"><br>
+Number of Refridgerators:<input type="text" name="fridge_no"><br>  
+Average use in a day:<input type="text" name="fridge_hr"><br>
+Number of Cookware (ALL):<input type="text" name="cook_no"><br>  
+Average use in a day:<input type="text" name="cook_hr"><br>
+Number of Ovens (ALL):<input type="text" name="o_no"><br>  
+Average use in a day:<input type="text" name="o_hr"><br>
+Number of Washing Machines:<input type="text" name="wm_no"><br>  
+Average use in a day:<input type="text" name="wm_hr"><br>
+
+<input type="submit" value="CALCULATE">  
+</form> 

@@ -1,0 +1,60 @@
+<style>
+        body
+        {
+            font-family: Calibri, Helvetica, sans-serif;
+            background-color: white;
+        }
+        h1
+        {
+            text-align: center;
+        }
+        input[type=text], [type=email]
+        { 
+            width: 100%; 
+            margin: 8px 0;
+            padding: 12px 20px; 
+            display: inline-block; 
+            border: 2px solid green; 
+            box-sizing: border-box;
+            border-radius: 20px;
+            height: 20px;
+
+        } 
+        input[type=submit]
+{
+    background-color: #4CAF50; 
+            width: 100%;
+            color: black; 
+            padding: 15px; 
+            margin: 10px 0px; 
+            border: none;
+            border-radius: 20px; 
+            cursor: pointer; 
+}
+    </style>
+    </head>
+    <body>
+        <h1>CONTACT US</h1><br>
+
+        <div class="contact" style="background-color:lightblue;border:1px solid pink; ">
+            <form action="ContactServlet" method="post" onsubmit="return validateform()">
+                <table style="margin-left: 700px;">
+                    <tbody>
+                        <tr><td>Name:</td><td>
+                        <input type="text" name="name" placeholder="Enter name..."></td></tr>
+                        <tr><td>Mobile:</td><td>
+                        <input type="text" name="mobile" placeholder="Enter mobile no..."></td></tr>
+                        <tr><td>Email:</td><td>
+                        <input type="email" name="email" placeholder="Enter email..."></td></tr>
+                        <tr><td>Subject:</td><td>
+                        <input type="text" name="subject" placeholder="Enter subject"></td></tr>
+                        <tr><td>Message:</td><td>
+                        <textarea name="message" style="height:100px; width: 300px;" placeholder="Enter your message..."></textarea></td></tr>
+                        <tr><td colspan="2">
+                        <input type="submit" value="SUBMIT" style="width:423px;text-align:center;"></td></tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+        
+    </body>
